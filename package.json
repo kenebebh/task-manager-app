@@ -17,7 +17,7 @@
     "turbo": "^2.9.6",
     "typescript": "5.9.2"
   },
-  "packageManager": "pnpm@10",
+  "packageManager": "pnpm@10.28.0",
   "lint-staged": {
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "pnpm --filter ./apps/web run lint"
