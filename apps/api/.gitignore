@@ -1,0 +1,10 @@
+node_modules/
+dist/
+# Local environment files (ignore all secrets, keep the example template)
+.env*
+!.env.example
+# Auto-generated Prisma AI skills
+.agents/
+.claude/
+.cursor/
+.devin/
