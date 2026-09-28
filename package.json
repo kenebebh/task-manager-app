@@ -21,6 +21,12 @@
   "lint-staged": {
     "apps/web/**/*.{js,jsx,ts,tsx}": [
       "pnpm --filter ./apps/web run lint"
+    ],
+    "apps/api/**/*.{js,ts}": [
+      "pnpm --filter ./apps/api run lint"
+    ],
+    "*.{ts,tsx,js,json,md}": [
+      "prettier --write"
     ]
   }
 }
