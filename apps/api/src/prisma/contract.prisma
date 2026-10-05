@@ -1,2 +1,12 @@
 // use prisma-8
 // Contract inferred from the live database schema. Edit as needed, then run `prisma contract emit`.
+
+model User {
+  id           String            @id @default(cuid(2))
+  email        String            @unique
+  passwordHash String?
+  firstName    String
+  lastName     String?
+  createdAt    TimestamptzString @default(now())
+  updatedAt   temporal.updatedAtString()
+}
